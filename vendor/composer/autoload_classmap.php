@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\Events\\SeriesCreated' => $baseDir . '/app/Events/SeriesCreated.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => $baseDir . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
@@ -34,6 +35,8 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Http\\Requests\\Auth\\LoginRequest' => $baseDir . '/app/Http/Requests/Auth/LoginRequest.php',
     'App\\Http\\Requests\\SeriesFormRequest' => $baseDir . '/app/Http/Requests/SeriesFormRequest.php',
+    'App\\Listeners\\EmailUsersAboutSeriesCreated' => $baseDir . '/app/Listeners/EmailUsersAboutSeriesCreated.php',
+    'App\\Listeners\\LogSeriesCreated' => $baseDir . '/app/Listeners/LogSeriesCreated.php',
     'App\\Mail\\SeriesCreated' => $baseDir . '/app/Mail/SeriesCreated.php',
     'App\\Models\\Episode' => $baseDir . '/app/Models/Episode.php',
     'App\\Models\\Season' => $baseDir . '/app/Models/Season.php',
