@@ -23,11 +23,11 @@ Route::get('/dashboard', function () {
 
 Route::get('/email', function () {
     return new \App\Mail\SeriesCreated(
-        'Serie de Teste',
-        1,
+        'Série de teste',
+        19,
         5,
         10,
     );
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

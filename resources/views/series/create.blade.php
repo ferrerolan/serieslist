@@ -36,10 +36,10 @@
             <div class="col-12">
                 <label for="cover" class="form-label">Capa</label>
                 <input type="file"
-                    id="cover" 
-                    name="cover" 
-                    class="form-control"
-                    accept="image/gif, image/jpeg, image/png">
+                       id="cover"
+                       name="cover"
+                       class="form-control"
+                       accept="image/gif, image/jpeg, image/png">
             </div>
         </div>
 

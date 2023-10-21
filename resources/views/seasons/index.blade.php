@@ -1,6 +1,9 @@
 <x-layout title="Temporadas de {!! $series->nome !!}">
-    <div class="text-center">
-    <img src="{{ asset('storage/' . $series->cover) }}" style="height: 400px" alt="Capa da série" class="img-fluid">
+    <div class="d-flex justify-center">
+        <img src="{{ asset('storage/' . $series->cover) }}"
+             style="height: 400px"
+             alt="Capa da série"
+             class="img-fluid">
     </div>
 
     <ul class="list-group">
