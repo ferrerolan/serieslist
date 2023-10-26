@@ -1,0 +1,16 @@
+// JavaScript for toggling dark mode
+const darkModeToggle = document.querySelector('#dark-mode-toggle');
+
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        document.cookie = 'dark-mode=enabled; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+    } else {
+        document.cookie = 'dark-mode=disabled; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+    }
+});
+
+// Check the cookie on page load
+if (document.cookie.includes('dark-mode=enabled')) {
+    document.body.classList.add('dark-mode');
+}
